@@ -1,0 +1,202 @@
+/* Foundation v2.1.3 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body{
+  background-color:#ccc;
+}
+.container-offset{
+    padding-top:10px;
+}
+.row {
+max-width: 940px; /* the site will be 940px wide */
+}
+.toprow{
+xposition: relative;
+xtop: 0;
+xleft: 0;
+background: #f1f1f1!important;
+/*background-color: #ccc;*/
+xwidth: 100%;
+/*
+-webkit-box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px;
+-moz-box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px;
+box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px;
+border-bottom: 3px solid #C9025C; */
+}
+
+/*
+.toprow ul{
+    float:left;
+    margin-bottom: 5px;
+}
+.toprow ul li{
+    float:left;
+    margin-right:1px;
+    margin-bottom:0;
+}
+.toprow ul li a{
+    float:left;
+    display: block;
+    padding:0 5px;
+}*/
+
+/* login bar drupal silly */
+.block #user-login-form{
+  float:left;
+}
+.block #user-login-form div.form-item-name,.block #user-login-form div.form-item-pass, 
+.block #user-login-form div.form-actions{float:left;}
+
+.toprow .form-item, .toprow .form-actions{
+  margin:0;
+  margin-bottom:5px;
+}
+.toprow .form-item input#edit-name, .toprow .form-item input#edit-pass{
+  width:150px;
+}
+.toprow .form-item input#edit-name{
+  margin-right:4px;
+}
+
+.block #user-login-form div.item-list{
+  clear:left;
+  margin:0;padding:0;
+}
+.block #user-login-form div.item-list ul{
+  margin:0;padding:0;
+}
+.block #user-login-form div.item-list ul li{
+  margin:0;padding:0; float: left;margin-right: 5px;
+  font-size:11px;
+}
+.block #user-login-form div.item-list ul li.first a{
+  padding-right:5px;
+  border-right: 1px solid #000;
+}
+
+.topwrapper .region{
+  float:right;
+}
+
+.region-header .menu-name-user-menu{
+  
+}
+.region-header .menu-name-user-menu ul{
+  float: left;
+  list-style: none;
+  margin:0; padding:0;
+}
+.region-header .menu-name-user-menu ul li{
+  float:left;
+  list-style-type:none;
+  list-style-image: none;
+}
+.region-header .menu-name-user-menu ul li a{
+  float:left;
+  display:block;
+  
+}
+
+
+
+.topwrapper{
+    padding-top: 7px;
+    padding-bottom:14px;
+    overflow:hidden;
+}
+
+.main{
+  background-color:#fff;
+}
+.rightcolumn{
+  xbackground-color: #00a6fc;
+  padding-top:20px;
+  
+}
+.leftcolumn{
+  xbackground-color: #7fae00;
+}
+.middlecolumn{
+  xbackground-color: #c08c00;
+  padding-top:20px;
+}
+
+ul#nav, ul#primary{
+  padding-left: 20px;
+  padding-top:20px;
+}
+ul#nav li, ul#primary li{
+  margin-bottom: 10px;
+}
+ul#nav li a, ul#nav li.follow, ul#primary li a, ul#primary li.follow{
+color: #777;
+font-size: 1.225em;
+color: #888;
+font-weight: bold;
+}
+
+.rightcolumn .updates, .rightcolumn .featured{
+  padding-right:20px;
+}
+
+.rightcolumn .updates h2, .rightcolumn .featured h2{
+  font-size: 1.1em;
+font-weight: bold;
+color: #898788;
+background-color: #f1f1f1;
+}
+
+.newsletter{
+  display: block;
+font-weight: bold;
+background-color: #F1F1F1;
+margin-bottom: 5px;
+}
+
+h1.header{
+ color:#a1a1a1;
+ font-weight: bold;
+ font-size: 1.9em;
+ text-align: center;
+}
+
+/* press */
+
+.image-wrapper{
+  background-color: #f8f8f8;
+  padding:2px;
+  margin-bottom:50px;
+}
+
+/* blog */
+.blog{
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #ccc;
+}
+.blog .image-wrapper{
+  margin-bottom: 15px;
+}
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

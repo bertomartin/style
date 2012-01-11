@@ -1,0 +1,106 @@
+<?php
+
+/**
+ * @file 
+ * Creates a block to show all the collections of a particular user
+ */
+
+/**
+ * Implements hook_block_info
+ * 
+ */
+ function usercollection_block_info(){
+   $blocks['user_collection'] = array(
+       'info'   => t('User Collections'),
+       'status' => TRUE,
+       'region' => 'sidebar_first',
+       'weight' => 1,
+       'visibility' => 0,
+   );
+   
+   return $blocks;
+ }
+ 
+ /**
+
+  * Implements hook_block_view().
+  */
+ function usercollection_block_view($delta){
+   
+   switch ($delta){
+     case 'user_collection':
+       $block['subject'] = t('User Collections');
+       $block['content'] = usercollection_block_content($delta);
+       return $block;
+   }
+   
+ }
+ 
+ /**
+  * A module-defined block content function
+  */
+ 
+ function usercollection_block_content($delta){
+   switch ($delta){
+     case 'user_collection':
+       
+       if (arg(0) == 'profile-preneur' && is_numeric(arg(1))) {
+          $uID = arg(1);
+          
+          
+          //load all the collections from this user
+          $result = db_query("SELECT * FROM {node} WHERE status = 1 and type = :c and uid = :u", array(':c' => 'collection', ':u' => $uID));
+          $items = array();
+          $imglist = array();
+          foreach ($result as $row){
+            
+            $fid = db_query("SELECT field_image_fid FROM {field_data_field_image} WHERE entity_id = :type", array(':type' => $row->nid))->fetchField();
+            $collection_image = file_load($fid);
+            //dpm($collection_image);
+            
+            $img_html = theme('image_style', array('style_name' => 'thumbnail', 'path' => $collection_image->uri));
+            $img_html2 = "<a href=/node/" . $row->nid . ">" . $img_html . "</a>";
+            
+            //$imglist[] = $img_html;
+           // $img_html = "<img src=site/default/files/" . $collection_image->filename . "/>";
+            $items[] = $img_html2;
+            
+          
+            
+            //return array('#markup' => theme('image_style', array('style_name' => 'thumbnail', 'path' => $collection_image->uri)) );
+            
+            
+            //$variables['avatar'] = theme('image_style', array('style_name' => 'thumbnail', 'path' => $avatar->uri));
+            
+           // $items[] = l($row->title, 'node/' . $row->nid);
+            
+            
+          }
+          
+          
+
+
+
+
+
+          
+          //print arg(1);
+          return array ('#markup' => theme('item_list', array('items' => $items)));
+       }
+       /*
+       if ($account = menu_get_object('profile2')) {
+          print $account->uid;
+          return "hello world";
+        }
+       */
+       
+       $result = db_query("SELECT * FROM {node} WHERE status = 1");
+       $items = array();
+       foreach ($result as $row){
+         $items[] = l($row->title, 'node/' . $row->nid);
+       }
+       return array ('#markup' => theme('item_list', array('items' => $items)));
+      
+       break;
+   }
+ }

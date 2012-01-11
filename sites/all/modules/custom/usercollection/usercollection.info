@@ -1,0 +1,5 @@
+name = User Collections
+description = Creates a block that generates a list of user collections. The collection is for the user profile being viewed.
+package = Stylepreneur
+core = 7.x
+
