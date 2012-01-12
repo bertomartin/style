@@ -206,10 +206,10 @@ function basic_form_user_login_block_alter(&$form, &$form_state){
 }
 
 /*
- * add javascript files to my templates
+ * hook_form_alter for simple news newsletter
  */
-function basic_preprocess_html(&$variables){
-  
-  drupal_add_js('js/style.js');
+function basic_form_simplenews_block_form_4_alter(&$form, &$form_state){
+  unset($form['mail']['#title']); //remove username label
+  //print_r($form);
   
 }
