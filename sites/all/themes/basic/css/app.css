@@ -21,6 +21,7 @@ body{
 }
 .row {
 max-width: 940px; /* the site will be 940px wide */
+max-width: 1020px;
 }
 .toprow{
 xposition: relative;
@@ -133,18 +134,34 @@ border-bottom: 3px solid #C9025C; */
   padding-top:20px;
 }
 
-ul#nav, ul#primary{
+ul#nav, ul#primary, div.menu-name-main-menu ul.menu{
   padding-left: 20px;
   padding-top:20px;
 }
-ul#nav li, ul#primary li{
-  margin-bottom: 10px;
+  div.menu-name-main-menu ul.menu li ul{
+    margin:0;padding:0;
+  }
+ul#nav li, ul#primary li, div.menu-name-main-menu ul.menu li{
+  margin-bottom: 5px;
+  list-style-image: none;
+  list-style-type: none;
 }
-ul#nav li a, ul#nav li.follow, ul#primary li a, ul#primary li.follow{
+ul#nav li a, ul#nav li.follow, ul#primary li a, ul#primary li.follow, div.menu-name-main-menu ul.menu li a{
 color: #777;
 font-size: 1.225em;
 color: #888;
 font-weight: bold;
+}
+
+div.menu-name-main-menu ul.menu li ul li a{
+  font-weight: normal;
+}
+
+ 
+
+
+.rightcolumn{
+  margin-left:3%;
 }
 
 .rightcolumn .updates, .rightcolumn .featured{
@@ -164,6 +181,16 @@ font-weight: bold;
 background-color: #F1F1F1;
 margin-bottom: 5px;
 }
+.block-simplenews h2.block-title{
+  display: block;
+font-weight: bold;
+background-color: #F1F1F1;
+margin-bottom: 5px;
+font-size: 14px;
+color:#555;
+}
+
+
 
 h1.header{
  color:#a1a1a1;
@@ -183,20 +210,75 @@ h1.header{
 /* blog */
 .blog{
   margin-bottom: 20px;
-  border-bottom: 1px dotted #ccc;
+  xborder-bottom: 1px dotted #ccc;
 }
 .blog .image-wrapper{
   margin-bottom: 15px;
 }
 /* -----------------------------------------
-   Page Name 1
+   stylepreneur list view page
 ----------------------------------------- */
+
+.view-preneur-list .views-row{
+  float:left;
+  margin-left:10px;
+  height:290px;
+}
 
 
 
 
 /* -----------------------------------------
-   Page Name 2
+   stylepreneur detail page
+----------------------------------------- */
+.profile2-preneur .field-name-field-image{
+  float:left;
+  margin-right: 10px;
+}
+.profile2-preneur .field-name-field-bio{
+  xfloat: left;
+  margin-left: 143px;
+}
+.block-usercollection {
+  clear:left;
+  margin-top:30px;
+}
+
+.block-usercollection h2.block-title{
+  font-size: 1.4em;
+  border-bottom:1px solid #ccc;
+}
+
+.block-usercollection div.item-list ul {
+  float:left;
+  margin:0;padding:0;
+}
+.block-usercollection div.item-list ul li{
+  float:left;
+  margin:0;
+  margin-right:10px;
+}
+.block-usercollection div.item-list ul li a{
+  display:block;
+  float:left;
+}
+
+
+
+/* -----------------------------------------
+   node collection page
 ----------------------------------------- */
 
+.node-collection{
+  
+}
 
+.node-collection .field-name-field-image{
+  float:left;
+  margin-right: 15px;
+}
+
+.node-collection .view-collection-items{
+  clear:left;
+  margin-top:20px;
+}

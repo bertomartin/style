@@ -33,7 +33,7 @@
                     
                   <div class="two columns leftcolumn">
                     <div id="primary-nav" class="menu <?php if (!empty($main_menu)) {print "with-primary";} if (!empty($secondary_menu)) {print " with-secondary";} ?>">
-                      <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
+                      <?php //print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
                     </div>
                     
                     <?php print render($page['sidebar_first']); ?>
@@ -99,14 +99,6 @@
                         </p>
                       </div>
                     </div><!-- /featured -->
-                    
-                    <div class="rows newsletter">
-                      <div class="twelve columns">
-                        <label class="newsletter">Newsletter</label>
-                        <input type="text" name="newsletter" value="email"></input>
-                      </div>
-                      
-                    </div>
                     
                     
                     

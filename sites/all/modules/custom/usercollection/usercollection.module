@@ -94,13 +94,17 @@
         }
        */
        
+       /*
+       
        $result = db_query("SELECT * FROM {node} WHERE status = 1");
        $items = array();
        foreach ($result as $row){
          $items[] = l($row->title, 'node/' . $row->nid);
        }
        return array ('#markup' => theme('item_list', array('items' => $items)));
-      
+       */
+       
+       
        break;
    }
  }
