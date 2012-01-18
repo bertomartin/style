@@ -17,10 +17,21 @@ if (theme_get_setting('basic_tabs')) {
   drupal_add_css( drupal_get_path('theme', 'basic') .'/css/tabs.css');
 }
 
+function basic_preprocess_field(&$vars){
+  //kpr($vars);
+}
+
 function basic_preprocess_page(&$vars, $hook) {
   if (isset($vars['node_title'])) {
     $vars['title'] = $vars['node_title'];
   }
+  
+  //print_r($vars);
+  
+  //if ($variables['node']->type == 'profile_preneur'){
+  //  print_r($node);
+  //}
+  
   // Adding a class to #page in wireframe mode
   if (theme_get_setting('wireframe_mode')) {
     $vars['classes_array'][] = 'wireframe-mode';

@@ -16,6 +16,17 @@
 body{
   background-color:#ccc;
 }
+h1.title{color:#555;font-size:2.0em;}
+body.page-preneur-list h1.title{
+  font-size:1.5em;
+  text-transform: uppercase;
+}
+body.page-profile-preneur h1.title{display:none;}
+body.node-type-collection h1.title{
+  font-size:2.0em;
+  color:#555
+}
+
 .container-offset{
     padding-top:10px;
 }
@@ -134,19 +145,25 @@ border-bottom: 3px solid #C9025C; */
   padding-top:20px;
 }
 
-ul#nav, ul#primary, div.menu-name-main-menu ul.menu{
+div.menu-name-main-menu ul.menu{
   padding-left: 20px;
   padding-top:20px;
 }
   div.menu-name-main-menu ul.menu li ul{
     margin:0;padding:0;
   }
-ul#nav li, ul#primary li, div.menu-name-main-menu ul.menu li{
-  margin-bottom: 5px;
+  div.menu-name-main-menu ul.menu li ul li{
+    margin:0;padding:0;
+  }
+div.menu-name-main-menu ul.menu li{
+  xmargin-bottom: 5px;
   list-style-image: none;
   list-style-type: none;
 }
-ul#nav li a, ul#nav li.follow, ul#primary li a, ul#primary li.follow, div.menu-name-main-menu ul.menu li a{
+div.menu-name-main-menu ul.menu li.menu-mlid-386 > a{
+  color:red;
+}
+div.menu-name-main-menu ul.menu li a{
 color: #777;
 font-size: 1.225em;
 color: #888;
@@ -174,6 +191,25 @@ font-weight: bold;
 color: #898788;
 background-color: #f1f1f1;
 }
+.rightcolumn h2.block-title{
+font-size: 1.1em;
+font-weight: bold;
+color: #898788;
+background-color: #f1f1f1; 
+}
+
+/* tweets */
+div.tweets-pulled-listing h2{display:none;}
+
+/* featured */
+span.featured-bio{
+  display:block;
+  margin-bottom:20px;
+}
+h4.featured-name{
+  color:#555;
+}
+
 
 .newsletter{
   display: block;
@@ -231,17 +267,77 @@ h1.header{
 /* -----------------------------------------
    stylepreneur detail page
 ----------------------------------------- */
+
+.group-right{
+  width:75%;
+}
+.group-left{
+  width:25%;
+}
+.group-header{
+  height:40px;
+}
+
 .profile2-preneur .field-name-field-image{
   float:left;
   margin-right: 10px;
 }
+
+.profile2-preneur .field-name-field-school{
+  float:left;
+}
+.profile2-preneur .field-name-field-school .field-label{
+  float: left;
+}
+.profile2-preneur .field-name-field-school .field-items{
+  float:left;
+}
+/* **** */
+.profile2-preneur .field-name-field-name{
+  font-size:2.0em;
+}
+
+.profile2-preneur .field-name-field-name .field-label{
+  
+}
+.profile2-preneur .field-name-field-name .field-items{
+  
+}
+/* ** */
+.profile2-preneur .field-name-field-website{
+  float:left;
+  clear:left;
+}
+.profile2-preneur .field-name-field-website .field-label{
+  float: left;
+}
+.profile2-preneur .field-name-field-website .field-items{
+  float:left;
+}
+
+/* *** */
+.profile2-preneur .field-name-field-location{
+  float:left;
+  clear:left;
+}
+.profile2-preneur .field-name-field-location .field-label{
+  float:left;
+}
+.profile2-preneur .field-name-field-location .field-items{
+  float:left;
+}
+
+
+
 .profile2-preneur .field-name-field-bio{
   xfloat: left;
-  margin-left: 143px;
+  xmargin-left: 143px;
+  clear:left;
+  padding-top:10px;
 }
 .block-usercollection {
   clear:left;
-  margin-top:30px;
+  margin-top:5px;
 }
 
 .block-usercollection h2.block-title{
@@ -281,4 +377,57 @@ h1.header{
 .node-collection .view-collection-items{
   clear:left;
   margin-top:20px;
+}
+
+body.node-type-collection div.ds-2col-stacked .group-header{
+  height:0;
+}
+body.node-type-collection div.ds-2col-stacked .group-footer{
+  margin-top:20px;
+}
+
+
+.field-name-field-season {
+  float:left;
+}
+.field-name-field-season .field-label{
+  float:left;
+}
+.field-name-field-season .field-items{
+  float:left;
+}
+/* ** */
+.field-name-field-theme{
+  clear:left;
+  float:left;
+}
+.field-name-field-theme .field-label{
+  float:left;
+}
+.field-name-field-theme .field-items{
+  float: left;
+}
+
+/* ** */
+.field-name-field-inspiration{
+  float:left;
+  clear:left;
+}
+.field-name-field-inspiration .field-label{
+  float:left;
+}
+.field-name-field-inspiration .field-items{
+  float:left;
+}
+
+/* ** */
+.field-name-field-linesheet{
+  float:left;
+  clear:left;
+}
+.field-name-field-linesheet .field-label{
+  float:left;
+}
+.field-name-field-linesheet .field-items{
+  float:left;
 }

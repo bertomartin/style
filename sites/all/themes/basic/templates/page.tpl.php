@@ -80,22 +80,9 @@
                   
                   <div class="three columns rightcolumn">
                     <?php print render($page['sidebar_second']); ?>
-                    <div class="rows updates">
-                      <div class="twelve columns">
-                        <h2>Updates</h2>
-                        <p>10:45 - Planning lorem ipsum dolor sit some bull update (from twitter)</p>
-                      </div>
-                      
-                    </div><!-- /updates -->
                     
-                    <div class="rows featured">
-                      <div class="twelve columns">
-                        <h2>Featured designer</h2>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget metus sem, aliquam rutrum tortor.
-                        </p>
-                      </div>
-                    </div><!-- /featured -->
+                    
+                    
                     
                     <!--
                     <div class="rows newsletter">
