@@ -82,7 +82,7 @@
                     <?php print render($page['sidebar_second']); ?>
                     
                     
-                    
+                    <?php echo "hello"; ?>
                     
                     <!--
                     <div class="rows newsletter">
