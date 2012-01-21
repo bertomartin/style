@@ -16,6 +16,9 @@
 body{
   background-color:#ccc;
 }
+table{
+  border:none;
+}
 h1.title{color:#555;font-size:2.0em;}
 body.page-preneur-list h1.title{
   font-size:1.5em;
