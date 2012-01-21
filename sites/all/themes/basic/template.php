@@ -228,3 +228,49 @@ function basic_form_simplenews_block_form_4_alter(&$form, &$form_state){
   //print_r($form);
   
 }
+
+
+/*
+ * previous/next links on blog pages
+ */
+function basic_prevnext($nid, $ntype) {
+
+
+$prev = db_query("SELECT nid, title FROM {node} WHERE nid < :nid AND type = :ntype AND status = 1 ORDER BY nid DESC LIMIT 1", array(':nid' => $nid, ':ntype' => $ntype));
+
+$next = db_query("SELECT nid, title FROM {node} WHERE nid > :nid AND type = :ntype AND status = 1 ORDER BY nid DESC LIMIT 1", array(':nid' => $nid, ':ntype' => $ntype));
+
+ $prev_link = "";
+ $next_link = "";
+
+foreach ($prev as $prev_node) {
+
+$prev_link = '<a href="/' . drupal_lookup_path('alias', 'node/' . $prev_node->nid) . '" title="previous"><span>' .$prev_node->title. '</span></a>';
+
+}
+
+ 
+
+foreach ($next as $next_node) {
+
+$next_link = '<a href="/' . drupal_lookup_path('alias', 'node/' . $next_node->nid) . '" title="next"><span>' .$next_node->title. '</span></a>';
+
+}
+
+ 
+
+$output = '
+
+<ul id="erf_pager">
+
+<li>'. $prev_link .'</li>
+
+<li>'. $next_link .'</li>
+
+</ul>
+
+';
+
+ 
+return $output;
+}
