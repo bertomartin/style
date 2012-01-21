@@ -159,13 +159,15 @@ div.menu-name-main-menu ul.menu li{
   xmargin-bottom: 5px;
   list-style-image: none;
   list-style-type: none;
+  text-transform:uppercase;
+  margin-bottom:1px;
 }
 div.menu-name-main-menu ul.menu li.menu-mlid-386 > a{
   color:red;
 }
 div.menu-name-main-menu ul.menu li a{
 color: #777;
-font-size: 1.225em;
+font-size: 1.5rem;
 color: #888;
 font-weight: bold;
 }
@@ -277,6 +279,15 @@ h1.header{
 }
 
 /* /press */
+
+
+/* resources */
+.resource-name-title{
+  font-size:1.5rem;
+  color:#777;
+  margin:0;
+}
+/* /resources */
 
 
 /* -----------------------------------------
