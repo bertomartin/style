@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Full Site feature.
+ */
+
+include_once('full_site.features.inc');
