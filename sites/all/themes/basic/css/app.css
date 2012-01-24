@@ -90,6 +90,9 @@ border-bottom: 3px solid #C9025C; */
 .block #user-login-form div.item-list{
   clear:left;
   margin:0;padding:0;
+  position: absolute;
+  top:26px;
+  right:0;
 }
 .block #user-login-form div.item-list ul{
   margin:0;padding:0;
@@ -165,14 +168,14 @@ div.menu-name-main-menu ul.menu li{
   list-style-image: none;
   list-style-type: none;
   text-transform:uppercase;
-  margin-bottom:1px;
+  margin-bottom:3px;
 }
 div.menu-name-main-menu ul.menu li.menu-mlid-386 > a{
   color:red;
 }
 div.menu-name-main-menu ul.menu li a{
 color: #777;
-font-size: 1.5rem;
+font-size: 1.3rem;
 color: #888;
 font-weight: bold;
 }
