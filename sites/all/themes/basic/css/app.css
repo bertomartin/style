@@ -486,3 +486,19 @@ body.node-type-collection div.ds-2col-stacked .group-footer{
 .field-name-field-linesheet .field-items{
   float:left;
 }
+
+/* comments */
+div#comments h2.title{
+  display: block;
+font-weight: bold;
+background-color: #F1F1F1;
+margin-bottom: 5px;
+font-size: 14px;
+color: #555;
+}
+
+div.comment h3.title{
+  font-size: 14px;
+  color:#ccc;
+}
+
