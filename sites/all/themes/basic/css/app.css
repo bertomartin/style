@@ -19,6 +19,13 @@ body{
 table{
   border:none;
 }
+a{
+  color:#1e1e1e;
+  text-decoration: underline;
+}
+div.tweets-pulled-listing a{
+  color:#1e1e1e;
+}
 
 h2.block-title,h1.title{color:#555;font-size:2.0em;}
 
@@ -178,6 +185,7 @@ color: #777;
 font-size: 1.3rem;
 color: #888;
 font-weight: bold;
+text-decoration: none;
 }
 
 div.menu-name-main-menu ul.menu li ul li a{
