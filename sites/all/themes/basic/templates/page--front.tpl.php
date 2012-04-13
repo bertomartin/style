@@ -76,8 +76,7 @@
                         <?php //print render($page['content']) ?>
                       </div>
                     
-                    
-                    <img src="<?php echo $theme_path ?>/images/hellofashionworld.jpg"/>
+                      <?php print views_embed_view("front_page_picture", "block"); ?>
                   </div>
                   
                   
